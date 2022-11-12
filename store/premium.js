@@ -1,19 +1,22 @@
 export const getters = {
   isUserPremium(state, getters, rootState, rootGetters) {
     return (
-      rootState.authentication.loggedIn &&
-      rootState.authentication.user?.is_subscription_valid
+      //rootState.authentication.loggedIn &&
+      //rootState.authentication.user?.is_subscription_valid
+    true
     )
   },
 
   getUserEmail(state, getters, rootState, rootGetters) {
-    return rootState.authentication.user?.email
+    //return rootState.authentication.user?.email
+    return "fbi@gov.uk"
   }
 }
 
 export const mutations = {
   setLicenseKey(state, value) {
-    state.gumroad.product.license_key = value
+    //state.gumroad.product.license_key = value
+    state.gumroad.product.license_key = "Bought"
   }
 }
 
